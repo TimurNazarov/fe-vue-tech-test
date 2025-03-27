@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref, defineAsyncComponent } from 'vue'
-import { Button, Dialog } from 'primevue'
+import { ref, defineAsyncComponent } from "vue";
+import { Button, Dialog } from "primevue";
 
-const AboutExtraInfo = defineAsyncComponent(() =>
-    import('@/components/about/ExtraInfo.vue')
-)
+const AboutExtraInfo = defineAsyncComponent(
+  () => import("@/components/about/ExtraInfo.vue"),
+);
 
-const showDialog = ref(false)
+const showDialog = ref(false);
 </script>
 
 <template>
@@ -15,7 +15,12 @@ const showDialog = ref(false)
 
     <Button label="Learn more" @click="showDialog = true" />
 
-    <Dialog v-model:visible="showDialog" modal header="More Info" style="max-width: 500px">
+    <Dialog
+      v-model:visible="showDialog"
+      modal
+      header="More Info"
+      style="max-width: 500px"
+    >
       <AboutExtraInfo />
     </Dialog>
   </div>

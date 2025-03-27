@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const menuItems = [
-  { label: 'Home', route: '/' },
-  { label: 'About', route: '/about' },
-  { label: 'Contact Us', route: '/contact-us' }
-]
+  { label: "Home", route: "/" },
+  { label: "About", route: "/about" },
+  { label: "Contact Us", route: "/contact-us" },
+];
 </script>
 
 <template>
@@ -11,11 +11,11 @@ const menuItems = [
     <div class="app-container">
       <nav class="nav">
         <router-link
-            v-for="item in menuItems"
-            :key="item.route"
-            :to="item.route"
-            class="nav-link"
-            active-class="active"
+          v-for="item in menuItems"
+          :key="item.route"
+          :to="item.route"
+          class="nav-link"
+          active-class="active"
         >
           {{ item.label }}
         </router-link>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import AppLoader from "@/components/common/AppLoader.vue"
-import AppHeader from "@/components/common/AppHeader.vue"
+import AppLoader from "@/components/common/AppLoader.vue";
+import AppHeader from "@/components/common/AppHeader.vue";
 </script>
 
 <template>
-  <AppHeader/>
+  <AppHeader />
 
   <RouterView v-slot="{ Component }">
     <template v-if="Component">
