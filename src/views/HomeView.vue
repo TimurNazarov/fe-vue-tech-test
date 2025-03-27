@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
+// simulated overhead
+await new Promise((resolve) => setTimeout(resolve, 300))
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="app-container">
+    <h2>Home Page</h2>
+  </div>
 </template>
